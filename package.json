@@ -1,0 +1,48 @@
+{
+  "name": "TopVideo",
+  "version": "1.0.0",
+  "description": "TopVideo Frontend Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "site",
+    "start",
+    "template"
+  ],
+  "author": "Nikolay Kozlov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.18.5",
+    "bs-html-injector": "^3.0.3",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "emitty": "^1.4.0",
+    "express": "^4.16.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-jade-inheritance": "^0.5.5",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-combine-duplicated-selectors": "^3.1.4",
+    "postcss-sorting": "^3.1.0",
+    "uglify-js": "^3.1.5",
+    "videojs-font": "^2.0.0",
+    "yellfy-pug-inheritance": "^2.0.0"
+  },
+  "dependencies": {},
+  "optionalDependencies": {}
+}

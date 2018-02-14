@@ -1,0 +1,32 @@
+include carousel
+
+.container-fluid
+	.row
+		.col-xs-12.sol-sm-6.col-md-12.col-lg-10
+			.collections.tabs
+				ul.collections__title.tabs__caption
+					li.collections__span.active Топ дня
+					li.collections__span Топ недели
+					li.collections__span Топ месяца
+					li.collections__span За все время
+				.tabs__content.active
+					include previews
+				.tabs__content
+					include previews
+				.tabs__content
+					include previews
+				.tabs__content
+					include previews 
+				a(href="#").collections__all Все видео <i class="fa fa-angle-double-right"></i>
+			.collections.tabs
+				ul.collections__title.tabs__caption
+					li.collections__span.active Новинки
+					li.collections__span Популярное
+				.tabs__content.active
+					include previews
+				.tabs__content
+					include previews
+			.collections.tabs
+				include users
+		.col-xs-12.sol-sm-6.col-md-12.col-lg-2
+			include sidebar

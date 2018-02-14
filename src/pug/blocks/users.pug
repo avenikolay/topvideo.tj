@@ -1,0 +1,13 @@
+ul.collections__title.tabs__caption
+	li.collections__span.active Рекомедуем
+.users
+	- var items = 1;
+		while items < 13
+			.users__item
+				.users__avatar
+					img(src="img/avatar" + items + ".jpg", alt="user avatar")
+				.users__name processor
+				.users__details
+					.users__videos <i class="fa fa-video-camera"></i> 192
+					.users__views <i class="fa fa-eye"></i> 200076
+			- items++;

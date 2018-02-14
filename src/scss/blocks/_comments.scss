@@ -1,0 +1,156 @@
+.comments__count {
+	font-size: 20px;
+}
+
+.comments__sort {
+	font-size: 16px;
+}
+
+.comments__stat {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.comments__count {
+	margin-right: 70px;
+}
+
+.comments__sortlink {
+	margin-right: 20px;
+	color: #606060;
+	&:hover,&:focus {
+		color: #606060;
+	}
+	&--active {
+		text-decoration: underline;
+		color: #000;
+	}
+}
+
+.comments__write {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.comments__avatar {
+	margin-right: 15px;
+	img {
+		width: 40px;
+		height: 40px;
+	}
+}
+.comments__form {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.comments__textarea {
+	resize:none;
+	width: 100%;
+	display: block;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 20px;
+	flex-grow: 1;
+}
+.comments__buttons {
+	margin-left: auto;
+}
+.comments__cancel {
+	border: none;
+	color: #7b7b7b;
+	background:none;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 30px;
+}
+.comments__send {
+	background-color: $accent;
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 47px;
+}
+
+
+.comments__comment {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.comments__autor {
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 3px;
+	span:first-child {
+		font-weight: bold;
+	}
+	span:last-child {
+		color: #696969;
+		margin-left: 20px;
+	}
+}
+
+.comments__text {
+	//margin-bottom: 17px;
+	font-size: 15px;
+}
+.comments__response {
+	display: flex;
+}
+.comments__reply {
+	text-transform: uppercase;
+	color: #7b7b7b;
+	margin-right: 75px;
+	&:hover, &:focus {
+		color: #000;
+		text-decoration: none;
+	}	
+}
+.comments__rating {
+	display: flex;
+	color: #989898;
+
+}
+.comments__likes {
+	color: #989898;
+	margin-right: 20px;
+	&:hover, &:focus {
+		color: #000;
+		text-decoration: none;
+	}
+}
+.comments__dislikes {
+	color: #989898;
+	&:hover, &:focus {
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+
+.comments__warning {
+	display: block;
+	background-color: lighten($accent, 20%);
+	padding: 20px;
+	margin-bottom: 25px;
+	p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

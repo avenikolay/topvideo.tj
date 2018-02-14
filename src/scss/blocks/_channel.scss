@@ -1,0 +1,31 @@
+.channel {
+	position: relative;
+	margin-bottom: 20px;
+}
+.channel__cover {
+	height: 240px;
+	background: url(../img/cover.jpg) no-repeat center;
+	background-size: cover;
+}
+.channel__details {
+	position: relative;
+	top: -50px;
+	display: flex;
+	align-items: flex-end;
+	height: 116px;
+}
+.channel__avatar {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+.channel__name {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.channel__subscribe {
+	margin-left: auto;
+	display: flex;
+	align-items: flex-end;
+}

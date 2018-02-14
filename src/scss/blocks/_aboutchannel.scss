@@ -1,0 +1,19 @@
+.aboutchannel {
+	display: flex;
+}
+.aboutchannel__descr {
+	width: 60%;
+	margin-right: 30px;
+}
+.aboutchannel__stat {
+	tr {
+		border-bottom: 1px solid #e6e6e6;
+	}
+	td {
+		padding-bottom: 15px;
+		padding-top: 10px;
+		&:first-child {
+			width: 60%;
+		}
+	}
+}

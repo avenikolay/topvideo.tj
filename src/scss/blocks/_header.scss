@@ -1,0 +1,174 @@
+.header {
+	border-top: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+	//overflow: hidden;
+	//margin-bottom: 30px;
+}
+.logo {
+	display: block;
+	width: 119px;
+	height: 50px;
+	background: url(../img/logo.png) no-repeat;
+	margin: 25px auto;
+}
+
+
+
+
+
+.searchbar {
+	height: 40px;
+	background-color: #242424;
+	margin-left: -15px;
+	margin-right: -15px;
+	position: relative;
+}
+.searchbar__form {
+	margin-left: 40px;
+}
+.searchbar__inputgroup {
+	&:before {
+		content: '\f002';
+		font-family: 'FontAwesome';
+		font-size: 14px;
+		line-height: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}	
+}
+.searchbar__inputgroup {
+	display: flex;
+}
+.searchbar__input {
+	height: 40px;
+	width: 100%; 
+	border: none;
+	padding: 5px 15px 5px 0;
+	background-color: #242424;
+	color: #fff;
+}
+
+
+
+
+
+
+
+.userbar {
+	height: 40px;
+	margin-left: -15px;
+	margin-right: -15px;
+	//padding: 0 15px;
+}
+.userbar__list {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+}
+.userbar__item {
+	background-color: $accent;
+	margin-right: 1px;
+	height: 40px;
+	width: 50%;
+	line-height: 40px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&--mail {
+		width: 70px;
+	}
+	&--upload {
+		width: 70px;
+		.userbar__link {
+			i {
+				margin-right: 0;
+			}
+		}
+	}
+	&--username {
+		width: calc(100% - 142px);
+		position: relative;
+		.userbar__link:after {
+				display: inline-block;
+			    width: 0;
+			    height: 0;
+			    margin-left: .255em;
+			    vertical-align: .255em;
+			    content: "";
+			    border-top: .3em solid;
+			    border-right: .3em solid transparent;
+			    border-bottom: 0;
+			    border-left: .3em solid transparent;
+		}
+	}
+}
+.userbar__link {
+	color: #000;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	border: 1px solid $accent;
+	height: 40px;
+	&:hover, &:focus {
+		border: 1px solid $accent;
+		text-decoration: none;
+		color: $accent;
+		background-color: #000;
+	}
+	i {
+		margin-right: 15px;
+	}
+}
+.userbar__sublist {
+	width: 100%;
+	background-color: $accent;
+	color: #000;
+	display: none;
+	padding: 0px;
+	&.show {
+		display: block;
+		z-index: 3;
+	}
+}
+
+.userbar__subitem {
+	list-style-type: none;
+	line-height: 20px;
+	font-size: 12px;
+
+}
+.userbar__sublink {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 5px 10px;
+	text-align: left;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: #000;
+		background-color: lighten($accent, 10%);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

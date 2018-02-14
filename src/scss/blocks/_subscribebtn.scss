@@ -1,0 +1,65 @@
+.messagebtn, .editbtn {
+	background-color: $brand;
+	height: 36px;
+	display: block;
+	width: 36px;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+	border: 1px solid $brand;
+	//border-radius: 8px;
+	&:hover,&:focus {
+		text-decoration: none;
+		color: $brand;
+		border: 2px solid $brand;
+		background-color: #fff;
+	}
+}
+.subscribebtn {
+	background-color: $brand;
+	height: 50px;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	width: 100%;
+	img {
+		height: 46px;
+		width: 46px;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 2px;
+	}
+	button, a {
+		width: 100%;
+		flex-basis: 100%;
+		cursor: pointer;
+		height: 50px;
+		line-height: 50px;
+		border: none;
+		background: $brand;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 0 20px;
+		font-weight: bold;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		&:active {
+			background-color: lighten($brand, 25%);
+		}
+	}
+	span {
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #fff;
+		color: $brand;
+		display: block;
+		height: 46px;
+		margin-top: auto;
+		margin-bottom: auto;
+		line-height: 46px;
+		margin-right: 2px;
+	}
+}

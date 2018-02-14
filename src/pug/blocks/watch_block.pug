@@ -1,0 +1,128 @@
+.container-fluid
+	include breadcrumbs
+	.row
+		.col-xs-12.col-sm-12.col-md-12.col-lg-9
+			.watch
+				.watch__video
+					script(src='http://topvideo.tj/media/js/videojs/video.js')
+					script(src='http://topvideo.tj/media/js/videojs/videojs.hotkeys.min.js')
+					script(src='http://topvideo.tj/media/js/videojs/videojs.ads.js')
+					script(src='http://topvideo.tj/media/js/videojs/videojs-preroll.js')
+
+					video#top-video.video-js.vjs-fluid(controls='', height='530px', preload='auto', poster='img/watch/watch.jpg', data-setup='{"playbackRates": [1, 1.5, 2] }')
+						source(src='img/watch/watch.mp4', type='video/mp4')
+						source(src='img/watch/watch.webm', type='video/webm')
+						p.vjs-no-js
+							| To view this video please enable JavaScript, and consider upgrading to a web browser that
+							a(href='http://videojs.com/html5-video-support/', target='_blank') supports HTML5 video
+					//- script.
+					//- 	window.onload = function(){
+					//- 	videojs('top-video', {}, function(){
+					//- 	var player = this;
+					//- 	player.preroll({
+					//- 	src:"http://79.170.191.82/uploads3/video/300/2017/12/08/f3e4296dceb4d408b1f714b3f8a28a0c.mp4",
+					//- 	adSign: true,
+					//- 	lang: {
+					//- 	'skip':'Пропустить',
+					//- 	'skip in': 'Пропустить через ',
+					//- 	'advertisement': 'Реклама',
+					//- 	'video start in': 'Видео начнетсячерез: '
+					//- 	}
+					//- 	});
+					//- 	});
+					//- 	}
+				include videodetails
+				//- .watch__details
+				//- 	.watch__cat-date
+				//- 		.watch__category ТВ
+				//- 		.watch__date 3 июля 2017
+				//- 	h1.watch__title Танцы на ТНТ. 3 сезон, 9 выпуск.
+				//- 	.videopanel
+				//- 		.videopanel__item
+				//- 			.watch__views <i class="fa fa-eye"></i> 771
+				//- 		.videopanel__item
+				//- 			a.watch__likes(href="#") <i class="fa fa-thumbs-o-up"></i> 159
+				//- 			a.watch__dislikes(href="#") <i class="fa fa-thumbs-o-down"></i> 12
+				//- 		.videopanel__item
+				//- 			a.watch__camera(href="#") <i class="fa fa-video-camera"></i>
+				//- 		.videopanel__item
+				//- 			a.watch__fav(href="#" data-status="favorite") <i class="fa fa-star"></i>
+				//- 		.videopanel__item
+				//- 			a.videopanel__user(href="#")
+				//- 				img(src="img/avatar6.jpg", alt="")
+				//- 				| greatschemer
+				//- 		.videopanel__item
+				//- 			.subscribebtn
+				//- 				button Подписаться
+				//- 				span 253
+				//- 	.watch__description
+				//- 		.watch__user
+				//- 			.watch__avatar: img(src="img/avatar.png", alt="avatar") 
+				//- 			.watch__username infi2126
+				//- 		.watch__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+				//- .comments
+				//- 	.comments__stat
+				//- 		.comments__count 33 комментария 
+				//- 		.comments__sort 
+				//- 			a.comments__sortlink.comments__sortlink--active(href="#") Новые
+				//- 			a.comments__sortlink(href="#") Популярные
+				//- 	.comments__warning
+				//- 		p Только зарегистрированные пользователи могут оставлять комментарии. <a href="#">Авторизуйтесь</a>
+				//- 	.comments__write
+				//- 		.comments__avatar: img(src="img/avatar.png", alt="avatar")
+				//- 		.comments__form
+				//- 			textarea.comments__textarea(placeholder="Оставить комментарий")
+				//- 			.comments__buttons
+				//- 				button.comments__cancel Отмена
+				//- 				button.comments__send Отправить
+				//- 	.comments__list
+				//- 		.comments__comment
+				//- 			.comments__avatar: img(src="img/avatar2.png", alt="avatar")
+				//- 			.comments__content
+				//- 				.comments__autor 
+				//- 					span Алексей Самойлов	  
+				//- 					span 3 часа назад
+				//- 				.comments__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+				//- 				.comments__response
+				//- 					a.comments__reply(href="#") Ответить
+				//- 					.comments__rating
+				//- 						a.comments__likes(href="") <i class="fa fa-thumbs-o-up"></i> 159
+				//- 						a.comments__dislikes(href="") <i class="fa fa-thumbs-o-down"></i> 1
+				//- 		.comments__comment
+				//- 			.comments__avatar: img(src="img/avatar3.png", alt="avatar")
+				//- 			.comments__content
+				//- 				.comments__autor 
+				//- 					span Алексей Самойлов	  
+				//- 					span 3 часа назад
+				//- 				.comments__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+				//- 				.comments__response
+				//- 					a.comments__reply(href="#") Ответить
+				//- 					.comments__rating
+				//- 						a.comments__likes(href="") <i class="fa fa-thumbs-o-up"></i> 159
+				//- 						a.comments__dislikes(href="") <i class="fa fa-thumbs-o-down"></i> 1
+				//- 		.comments__comment
+				//- 			.comments__avatar: img(src="img/avatar4.png", alt="avatar")
+				//- 			.comments__content
+				//- 				.comments__autor 
+				//- 					span Алексей Самойлов	  
+				//- 					span 3 часа назад
+				//- 				.comments__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+				//- 				.comments__response
+				//- 					a.comments__reply(href="#") Ответить
+				//- 					.comments__rating
+				//- 						a.comments__likes(href="") <i class="fa fa-thumbs-o-up"></i> 159
+				//- 						a.comments__dislikes(href="") <i class="fa fa-thumbs-o-down"></i> 1
+			include previews
+		.col-xs-12.col-sm-12.col-md-12.col-lg-3
+			include sidebar_watch
+
+#toAlbum.iziModal
+	.addtoalbum
+		h1 Добавить в альбом
+		p выберите альбом...
+		form.addtoalbum__form
+			select.addtoalbum__select
+				option(value="1") Альбом 1
+				option(value="2" selected="selected") Альбом 2
+				option(value="3") Альбом 3
+			button.addtoalbum__submit(type='submin') Добавить

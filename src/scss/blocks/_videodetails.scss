@@ -1,0 +1,272 @@
+.videodetails {
+	position: relative;
+	background:#efefef;
+	margin-bottom: 15px;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+.videodetails__1 {
+	order: 2;
+	@include media-breakpoint-down(xs) {
+		order: 3;
+	}
+	@include media-breakpoint-only(sm) {
+		order: 3;
+	}
+	@include media-breakpoint-only(md) {
+		order: 3;
+	}
+}
+.videodetails__2 {
+	order: 1;
+	//flex-grow: 1;
+	@include media-breakpoint-up(lg) {
+		width: 60%;
+	}
+}
+.videodetails__3 {
+	width: 100%;
+	//margin-bottom: 20px;
+	order: 3;
+	@include media-breakpoint-down(xs) {
+		order: 2;
+		margin-bottom: 20px;
+	}
+	@include media-breakpoint-only(sm) {
+		order: 2;
+		margin-bottom: 20px;
+	}
+	@include media-breakpoint-only(md) {
+		order: 2;
+		margin-bottom: 20px;
+	}
+}
+.videodetails__4 {
+	order: 4;
+	width: 100%;
+	margin-top: 20px;
+}
+.videoedit {
+	//border: 2px solid $accent;
+	//padding: 10px;
+}
+.videoedit__tabs {
+	display: flex;
+	
+}
+.videoedit__tab {
+	width: 25%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 2px solid $accent;
+	cursor: pointer;
+	&:hover {
+		font-weight: bold;
+	}
+	&--active {
+		border-top: 2px solid $accent;
+		border-left: 2px solid $accent;
+		border-right: 2px solid $accent;
+		border-bottom: none;
+		cursor: inherit;
+		&:hover {
+			font-weight: 100;
+		}
+	}
+	i {
+		margin-right: 10px;
+		color: $accent;
+		font-size: 18px;
+	}
+	
+}
+.vieoedit__tabcontent {
+	//background-color: #fff;
+	margin-bottom: 1px;
+	border-left: 2px solid $accent;
+	border-right: 2px solid $accent;
+	border-bottom: 2px solid $accent;
+	padding: 20px;
+	display: none;
+	&--active {
+		display: block;
+	}
+}
+
+.videodetails__main {
+	margin-bottom: 20px;
+}
+
+.videodetails__info {
+	display: flex;
+	align-items: center;
+}
+.videodetails__title {
+	font-size: 21px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.videodetails__category {
+	height: 30px;
+	background-color: $accent;
+	width: 96px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 15px;
+	flex-grow: 1;
+	max-width: 96px;
+	min-width: 96px;
+	color: #000;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+
+.videodetails__actions {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.videoactions {
+	display: flex;
+	@include media-breakpoint-down(xs) {
+		flex-wrap: no-wrap;
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+.videoactions__item {
+	width: 60px;
+	height: 30px;
+	display: flex;
+	margin-right: 10px;
+	align-items: center;
+	justify-content: center;
+	&:last-child {
+		margin-right: 0;
+	}
+	@include media-breakpoint-down(xs) {
+		width: calc(25% - 30px);
+		margin: 0;
+		overflow: hidden;
+	}
+}
+
+.watch__views {
+	border: 1px solid #bcbcbc;
+}
+.watch__likes,
+.watch__dislikes,
+.watch__camera,
+.watch__fav {
+	border: 1px solid $accent;
+	&:hover {
+		text-decoration: none;
+		color: #000;
+		background-color: $accent;
+	}
+}
+.watch__views,
+.watch__likes,
+.watch__dislikes,
+.watch__camera,
+.watch__fav {
+	&--active, &[data-status='favorite'] {
+		background-color: $accent;
+	}
+
+	text-align: center;
+	
+	width: 60px;
+	height: 30px;
+	line-height: 27px;
+	font-size: 14px;
+	color: #000;
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+	}
+}
+
+
+.videochannel {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	height: 61px;
+	margin-right: 20px;
+}
+.videochannel__avatar {
+	margin-right: 10px;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	img {
+		width: 61px;
+		height: 61px;
+		border: 2px solid #fff;
+	}
+}
+.videochannel__username {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 21px;
+	color: #000;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: #000;
+	}
+}
+.videosubscribebtn {
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	background-color: $brand;
+	height: 30px;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 200px;
+	button, a {
+		width: 100%;
+		flex-basis: 100%;
+		cursor: pointer;
+		height: 30px;
+		line-height: 30px;
+		border: none;
+		background: $brand;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 0 20px;
+		font-weight: bold;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		&:active {
+			background-color: lighten($brand, 25%);
+		}
+	}
+	span {
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #fff;
+		color: $brand;
+		display: block;
+		height: 26px;
+		margin-top: auto;
+		margin-bottom: auto;
+		line-height: 26px;
+		margin-right: 2px;
+	}
+}
+
+
+
+
+
+

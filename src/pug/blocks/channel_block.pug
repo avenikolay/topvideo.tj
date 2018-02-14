@@ -1,0 +1,36 @@
+.container-fluid
+	include breadcrumbs
+	.row
+		.col-xs-12.col-sm-12.col-md-7.col-lg-9
+			.channel
+				.channel__cover
+				.channel__details
+					.channel__avatar
+						img(src="img/avatar.png", alt="avatar")
+					.channel__title
+						.channel__name infi2126 
+						.channel__stat 526 подписчиков · 1524 роликов
+					.channel__subscribe
+						.subscribebtn
+							button Подписаться
+							span 253
+						a.messagebtn(href="") <i class="fa fa-envelope"></i>
+						a.editbtn(href="") <i class="fa fa-edit"></i>
+			.collections.tabs#channelTabs
+				ul.collections__title.tabs__caption
+					li.collections__span.active(data-name='video') Видео
+					li.collections__span(data-name='playlists') Плейлисты
+					li.collections__span(data-name='about') О канале
+				.tabs__content.active
+					.row
+						include previews
+					include pagination
+				.tabs__content
+					.row
+						include previews
+				.tabs__content
+					include aboutchannel
+			
+		.col-xs-12.col-sm-12.col-md-5.col-lg-3
+			include sidebar
+	

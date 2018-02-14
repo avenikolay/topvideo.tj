@@ -1,0 +1,27 @@
+.userbar
+	ul.userbar__list
+		li.userbar__item.userbar__item--mail
+			a.userbar__link(href="")
+				i.fa.fa-envelope
+				| (0)
+		li.userbar__item.userbar__item--upload
+			a.userbar__link(href="")
+				i.fa.fa-cloud-upload
+		li.userbar__item.userbar__item--username.dropdown
+			a.userbar__link(href="" data-toggle="dropdown" id="dLabel")
+				| username 
+			ul.userbar__sublist.dropdown-menu(aria-labelledby="dLabel")
+				li.userbar__subitem 
+					a.userbar__sublink(href="") Профиль
+				li.userbar__subitem 
+					a.userbar__sublink(href="") Статистика
+				li.userbar__subitem 
+					a.userbar__sublink(href="") Выход
+		//- li.userbar__item
+		//- 	a.userbar__link(href="") 
+		//- 		i.fa.fa-key
+		//- 		| Регистрация
+		//- li.userbar__item
+		//- 	a.userbar__link(href="") 
+		//- 		i.fa.fa-lock
+		//- 		| Вход

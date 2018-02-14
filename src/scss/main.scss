@@ -1,0 +1,70 @@
+@import "../bower_components/bootstrap/scss/bootstrap-reboot";
+@import "../bower_components/bootstrap/scss/grid";
+
+// шрифты
+@import "_fonts";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=cyrillic');
+
+// иконочные шрифты
+@import "_fontawesome";
+
+// переменные
+@import "_vars";
+// миксины
+@import "_mixins";
+
+
+// карусель
+@import "../bower_components/owl.carousel/src/scss/owl.carousel";
+@import "../bower_components/owl.carousel/src/scss/owl.theme.default";
+
+// плеер
+@import "../bower_components/video.js/src/css/video-js";
+@import "plugins/_videojs-contrib-ads";
+@import "plugins/_videojs-preroll";
+
+@import "plugins/_izimodal.min";
+
+
+
+@import "_selectize";
+
+*:focus {
+	outline: none;
+}
+button {
+	&:focus {
+		outline: none;
+	}
+}
+body {
+	font-weight: 300;
+	zoom: 100%;
+	font-size: 14px;
+	//font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+@import "blocks/_header";
+@import "blocks/_nav";
+@import "blocks/_carousel";
+@import "blocks/_preview";
+@import "blocks/_compilation";
+@import "blocks/_collections";
+@import "blocks/_watch";
+@import "blocks/_users";
+@import "blocks/_footer";
+@import "blocks/_breadcrumbs";
+@import "blocks/_comments";
+@import "blocks/_channel";
+@import "blocks/_subscribebtn";
+@import "blocks/_pagination";
+@import "blocks/_aboutchannel";
+@import "blocks/_search";
+@import "blocks/_videodetails";
+
+
+
+
+
+
+@import "_media";

@@ -1,0 +1,23 @@
+include ../blocks/mixins
+doctype html
+html(lang='ru' itemscope itemtype='http://schema.org/Product')
+	head
+		+meta("TopVideo", "TopVideo – видео онлайн", "http://topvideo.tj")
+		include ../blocks/favicons
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		// CSS
+		link(rel='stylesheet', href='css/main.css')
+		title
+			block title
+	body
+		//if lt IE 8
+			p.browserupgrade
+				| You are using an 
+				strong outdated
+				|  browser. Please 
+				a(href='http://browsehappy.com/') upgrade your browser
+				|  to improve your experience.
+		// Add your site or application content here
+		block content
+		script(src="js/main.js")
